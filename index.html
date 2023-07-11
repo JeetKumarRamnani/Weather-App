@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="bg-[#1F1F1F] flex items-center justify-center h-screen font-['Poppins']"
+  >
+    <div
+      class="max-w-2xl w-80 h-[450px] bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-xl p-3 flex items-center flex-col"
+      id="container"
+    >
+      <!-- INPUT CONTAINER STARTS -->
+      <div class="flex gap-2 items-center" id="inputContainer">
+        <input
+          class="rounded-full p-1 outline-none"
+          type="text"
+          placeholder="Enter City Name....."
+          id="userInput"
+        />
+        <div
+          class="rounded-full w-7 h-7 flex items-center bg-white overflow-hidden cursor-pointer"
+          id="searchBtn"
+        >
+          <img
+            class="w-3 mx-auto"
+            src="./images/search.png"
+            alt="search-icon"
+          />
+        </div>
+      </div>
+      <!-- INPUT CONTAINER ENDS -->
+      <!-- WEATHER INFO CONTAINER STARTS -->
+
+      <div class="" id="weatherInfoContainer">
+        <img src="images/clear.png" alt="sun image" id="weatherImg" />
+        <h2 class="text-5xl text-center">
+          <span id="temp">0</span><span class="text-white">&#176;</span>C
+        </h2>
+        <h2 class="text-3xl mt-5 text-center text-gray-50" id="city">
+          City Name
+        </h2>
+      </div>
+
+      <!-- WEATHER INFO CONTAINER ENDS -->
+
+      <!-- Humidity INFO CONTAINER STARTS -->
+      <div class="flex gap-5 mt-5" id="humidityContainer">
+        <div class="flex items-center gap-3" id="humidityInfo">
+          <img class="w-10" src="images/humidity.png" alt="humidity-icon" />
+          <div>
+            <p id="humidity">0%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3" id="windInfo">
+          <img class="w-10" src="images/wind.png" alt="humidity-icon" />
+          <div>
+            <p><span id="windSpeed">0</span> km/hr</p>
+            <p>Wind speed</p>
+          </div>
+        </div>
+      </div>
+      <!-- Humidity INFO CONTAINER ENDS -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
